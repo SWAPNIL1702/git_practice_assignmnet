@@ -3,7 +3,9 @@ function isPrime(number) {
       return false; 
     }
   
-    //error here
+    if (number <= 3) {
+      return true;
+    }
   
     //if the number is divisible by 2 or 3
     if (number % 2 === 0 || number % 3 === 0) {
